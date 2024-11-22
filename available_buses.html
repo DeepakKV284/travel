@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Buses</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .nav button:hover {
+      color: #0056b3;
+    }
+
+    .search-container {
+      max-width: 600px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .search-container input {
+      width: 70%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .search-container button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .buses-container {
+      flex-grow: 1; /* This allows the container to grow and take up the remaining space */
+      width: 100%; /* Ensure it takes full width */
+      margin: 20px 0; /* Remove margin from the sides */
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .bus-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; /* Remove default margin */
+    }
+
+    .bus-item {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 10px;
+    }
+
+    .bus-item h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .amenities, .rating {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 10px auto;
+      text-align: center;
+      text-decoration: none; /* Remove underline */
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+      margin-top: auto;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bus Booking</h1>
+    <div class="nav">
+      <button onclick="location.href='home.html'">Home</button>
+      <button onclick="location.href='contact.html'">Contact Us</button>
+      <button onclick="location.href='index.html'">Logout</button>
+    </div>
+  </header>
+
+  <div class="search-container">
+    <input type="text" placeholder="Search buses...">
+    <button onclick="location.href='available_buses.html'">Search Buses</button>
+  </div>
+
+  <div class="buses-container">
+    <h2>Available Buses</h2>
+    <ul class="bus-list">
+      <li class="bus-item">
+        <h3>Travel Name: inter city travels</h3>
+        <div class="amenities">Amenities: WiFi, AC, Refreshments</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐☆</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+      <li class="bus-item">
+        <h3>Travel Name: Morning Star</h3>
+        <div class="amenities">Amenities: Reclining Seats, Entertainment System</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+      <li class="bus-item">
+        <h3>Travel Name: Tranz INDIA</h3>
+        <div class="amenities">Amenities: Charging Points, AC</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐☆</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+      <li class="bus-item">
+        <h3>Travel Name:Orange Travels</h3>
+        <div class="amenities">Amenities: WiFi, Snack Service</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+      <li class="bus-item">
+        <h3>Travel Name: Sri krishna Travels</h3>
+        <div class="amenities">Amenities: AC, Leg Rest</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐☆</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+      <li class="bus-item">
+        <h3>Travel Name: SRM Travels</h3>
+        <div class="amenities">Amenities: Entertainment System, Free WiFi</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+      <li class="bus-item">
+        <h3>Travel Name: Happy Travels</h3>
+        <div class="amenities">Amenities: Reclining Seats, AC</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐☆</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+      <li class="bus-item">
+        <h3>Travel Name: SVR Travels</h3>
+        <div class="amenities">Amenities: WiFi, Snacks</div>
+        <div class="rating">Rating: ⭐⭐⭐⭐⭐</div>
+        <a href="booking.html" class="btn">Book Now</a>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2024 Bus Booking. All rights reserved.
+  </footer>
+</body>
+</html>

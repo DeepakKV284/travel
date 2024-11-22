@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bus Booking - Login / Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <input type="radio" name="form-toggle" id="login-radio" checked hidden>
+  <input type="radio" name="form-toggle" id="register-radio" hidden>
+  <input type="radio" name="form-toggle" id="forgot-radio" hidden>
+
+  <div class="form-container" id="login-form">
+    <h2>Login to Lovely Travels.com</h2>
+    <form action="home.html">
+      <div class="input-group">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="extra-options">
+        <label for="forgot-radio">Forgot Password?</label>
+        <label for="register-radio">Create an account</label>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-container" id="register-form">
+    <h2>Create Account</h2>
+    <form action="home.html"> <!-- Action to redirect to home page on successful registration -->
+      <div class="input-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+      </div>
+      <div class="input-group">
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+        <label for="new-password">New Password</label>
+        <input type="password" id="new-password" placeholder="Enter a new password" required>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+      </div>
+      <div class="input-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <div class="extra-options">
+        <label for="login-radio">Back to Login</label>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-container" id="forgot-form">
+    <h2>Forgot Password</h2>
+    <form action="#!">
+      <div class="input-group">
+        <label for="forgot-email">Email</label>
+        <input type="email" id="forgot-email" placeholder="Enter your registered email" required>
+      </div>
+      <button type="submit" class="btn">Reset Password</button>
+      <div class="extra-options">
+        <label for="login-radio">Back to Login</label>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
